@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule chi-tiet-san-pham/(.*)/([0-9]{1,}) index.php?controller=product&action=detail&slug=$1&id=$2
+RewriteRule filter/price/([0-9]{1,}) index.php?controller=product&action=filterprice&id=$1
+RewriteRule filter/(.*)/([0-9]{1,}) index.php?controller=product&action=filtercategory&slug=$1&id=$2
+RewriteRule gio-hang-cua-ban/([0-9]{1,}) index.php?controller=cart&action=add&id=$1
+RewriteRule gio-hang-cua-ban index.php?controller=cart&action=index
